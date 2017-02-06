@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const requestPromise = require('request-promise');
 const LineByLineReader = require('line-by-line');
