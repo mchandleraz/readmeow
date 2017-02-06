@@ -1,0 +1,16 @@
+{
+  "name": "readmeow",
+  "version": "0.0.1",
+  "description": "prepend a markdown file with a cat gif. intended for doper README.md files.",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "mchandleraz",
+  "license": "ISC",
+  "dependencies": {
+    "line-by-line": "^0.1.5",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  }
+}
