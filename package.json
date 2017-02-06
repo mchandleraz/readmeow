@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm test"
   },
-  "author": "mchandleraz",
+  "author": "mcaz",
   "license": "ISC",
   "dependencies": {
     "line-by-line": "^0.1.5",

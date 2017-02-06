@@ -6,11 +6,11 @@ const workingDirectory = process.cwd();
 const filepath = `${workingDirectory}/README.md`;
 const package = require(`${workingDirectory}/package.json`);
 
-exports.readMeow = function() {
+module.exports = function() {
   requestPromise('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cat')
     .then(function(response) {
       const data = JSON.parse(response).data;
-      const gifMarkdown = `![powered by readmeow](${data.image_original_url})`;
+      const gifMarkdown = `![powered by readmeow](${data.image_url})`;
 
       let readme = new LineByLineReader(filepath);
       let finalMarkdown = '';
