@@ -44,7 +44,7 @@ function generateReadmeowMarkdown(response) {
 
 function onLineByLineError(error, gifMarkdown) {
   if (error.code !== 'ENOENT') {
-    // if erroror is anything other than "no file":
+    // error is something other than "no file", so:
     throw error;
   }
   // error.code is essentially "no file", so:
